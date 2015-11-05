@@ -1,3 +1,4 @@
+
 data <- read.csv("household_power_consumption.txt", sep = ";", na.strings = "?")
 data[[1]] <- as.Date(data[[1]],"%d/%m/%Y")
 

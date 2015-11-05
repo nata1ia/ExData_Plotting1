@@ -1,3 +1,4 @@
+
 data <- read.csv("household_power_consumption.txt", sep = ";", na.strings = "?")
 data[[1]] <- as.Date(data[[1]],"%d/%m/%Y")
 data2 <- subset( data, data$Date == "2007-02-01" | data$Date == "2007-02-02") 
